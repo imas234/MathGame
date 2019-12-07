@@ -2,7 +2,8 @@ const docOptions = document.querySelectorAll("#option-box .option");
 const docExpression = document.querySelector("#expression");
 const scoreMsg = document.getElementById("score-msg");
 const score = document.getElementById("score");
-const docLinks = document.querySelectorAll("#link-box .link");
+const saveScoreButton = document.getElementById("save-score");
+const leaderboardButton = document.getElementById("leaderboard");
 
 function getRandNum(num){
     let outNum = Math.floor(Math.random() * num);
@@ -123,17 +124,17 @@ function init(){
 }
 
 function addLinks(){
-    docLinks[0].href = "saveScore.php";
-    docLinks[0].textContent = "Save Score";
-    docLinks[1].href = "leaderboard.php";
-    docLinks[1].textContent = "Leaderboard";
+    saveScoreButton.href = "saveScore.php";
+    saveScoreButton.textContent = "Save Score";
+    leaderboardButton.href = "leaderboard.php";
+    leaderboardButton.textContent = "Leaderboard";
 }
 
 function removeLinks(){
-    docLinks[0].href = "";
-    docLinks[0].textContent = "";
-    docLinks[1].href = "";
-    docLinks[1].textContent = "";
+    saveScoreButton.href = "";
+    saveScoreButton.textContent = "";
+    leaderboardButton.href = "";
+    leaderboardButton.textContent = "";
 }
 
 var points = 0;
