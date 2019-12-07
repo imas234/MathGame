@@ -1,0 +1,133 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    background-color: #FDF4F0;
+}
+
+.container{
+    text-align: center;
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#timer{
+    font-size: 15px;
+    color: #150C2D;
+}
+
+#expression{
+    color: #150C2D;
+    font-size: 70px;
+    font-weight: lighter;
+}
+
+#option-box{
+    color: #150C2D;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.option{
+    width: 80px;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: #150C2D;
+    border-bottom-width: 2px;
+    margin: 5px;
+    color: #150C2D;
+    font-size: 55px;
+    font-family: 'Quicksand', sans-serif;
+    padding: 10px;
+}
+
+.option:active{
+    font-size: 60px;
+    font-weight: bold;
+    border-bottom-width: 5px;
+    outline: none;
+}
+
+.option:focus{
+    outline-color: #150C2D;
+    outline-style: solid;
+    outline-width: 0px;
+    box-shadow: #150C2D;
+}
+
+.option:hover{
+    font-size: 60px;
+    border-bottom-width: 5px;
+    font-weight: bold;
+}
+
+.option:disabled{
+    color: #454053;
+    border-bottom: none;
+}
+
+#reset-box{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+#reset{
+    color: #FDF4F0;
+    background-color: #150C2D;
+    border-width: 0px;
+    border-radius: 50px;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 20px;
+    font-family: 'Quicksand', serif;
+}
+
+#reset:active{
+    outline: none;
+    font-size:20px;
+}
+
+#reset:focus{
+    outline: none;
+    font-size:20px;
+}
+
+#reset:hover{
+    font-size: 20px;
+}
+
+#reset:disabled{
+    background-color: #454053;
+}
+
+#score-msg{
+    font-size: 25px;
+    color: #150C2D;
+}
+
+#score{
+    font-size: 40px;
+    color: #EF5818;
+    font-weight: bold;
+}
+/*  
+    color: #FDF4F0
+    color: #150C2D
+    font-family: 'Solway', serif;
+    header 70PX
+    elements 55px
+*/
