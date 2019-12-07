@@ -23,11 +23,13 @@ body{
 }
 
 #timer{
-    font-size: 15px;
-    color: #150C2D;
+    font-size: 25px;
+    color: #EF5818;
 }
 
 #expression{
+    padding-bottom: 40px;
+    padding-top: 40px;
     color: #150C2D;
     font-size: 70px;
     font-weight: lighter;
@@ -123,6 +125,28 @@ body{
     font-size: 40px;
     color: #EF5818;
     font-weight: bold;
+}
+
+#link-box{
+    flex-direction: row;
+    padding-top: 20px;
+}
+
+.link{
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    color:#E18B5A;
+    padding: 20px;
+}
+
+.link:visited{
+    text-decoration: none;
+    color:#E18B5A;
+}
+
+.link:hover{
+    font-size: 27px;
 }
 /*  
     color: #FDF4F0

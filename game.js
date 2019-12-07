@@ -2,6 +2,7 @@ const docOptions = document.querySelectorAll("#option-box .option");
 const docExpression = document.querySelector("#expression");
 const scoreMsg = document.getElementById("score-msg");
 const score = document.getElementById("score");
+const docLinks = document.querySelectorAll("#link-box .link");
 
 function getRandNum(num){
     let outNum = Math.floor(Math.random() * num);
@@ -95,6 +96,7 @@ function disableOptions(disabled){
 function reset(){
     document.getElementById("reset").disabled = false;
     disableOptions(true);
+    addLinks();
     document.getElementById("reset").addEventListener("click",function(){
         disableOptions(false);
         game();
@@ -113,10 +115,25 @@ function removeScore(){
 
 function init(){
     points = 0;
-    timer = 60;
+    timer = 10;
     document.getElementById("reset").disabled = true;
     document.getElementById("timer").textContent = String(timer);
     removeScore();
+    removeLinks();
+}
+
+function addLinks(){
+    docLinks[0].href = "saveScore.php";
+    docLinks[0].textContent = "Save Score";
+    docLinks[1].href = "leaderboard.php";
+    docLinks[1].textContent = "Leaderboard";
+}
+
+function removeLinks(){
+    docLinks[0].href = "";
+    docLinks[0].textContent = "";
+    docLinks[1].href = "";
+    docLinks[1].textContent = "";
 }
 
 var points = 0;
@@ -132,7 +149,6 @@ function game(){
             document.getElementById("timer").textContent = String(timer);
         }
         else{
-            console.log("should end here");
             clearInterval(t);
             reset();
             showScore();

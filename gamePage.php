@@ -14,7 +14,7 @@
         <span id="timer">60</span>
     </div>
     <div class="container" id = "expression-box">
-        <p id="expression"></p>
+        <span id="expression"></span>
     </div>
     <div class="container" id="option-box">
         <button class="option" id="op1"></button>
@@ -27,6 +27,10 @@
     <div class="container" id="scoreBox">
         <span id="score-msg"></span>
         <span id="score"></span>
+    </div>
+    <div class="container" id="link-box">
+        <a class="link"></a>
+        <an class="link"></a>
     </div>
     <script src="game.js"></script>
 </body>
