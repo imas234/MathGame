@@ -33,9 +33,6 @@ function evaluate(expression){
 }
 
 function generateOptions(result){
-    if ((result - 1) <= 0) {
-        return [result, result + 1, result + 2];
-    }
     return [result, result + 1, result - 1];
 }
 
@@ -98,6 +95,7 @@ function reset(){
     document.getElementById("reset").disabled = false;
     disableOptions(true);
     addLinks();
+    localStorage.setItem("latestPoints", points);
     document.getElementById("reset").addEventListener("click",function(){
         disableOptions(false);
         game();
@@ -116,7 +114,7 @@ function removeScore(){
 
 function init(){
     points = 0;
-    timer = 60;
+    timer = 10;
     document.getElementById("reset").disabled = true;
     document.getElementById("timer").textContent = String(timer);
     removeScore();
