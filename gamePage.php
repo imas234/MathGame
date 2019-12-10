@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="gameStyle.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Game Screen</title>
 </head>
 <body>
     <div class="container" id="timer-box">

@@ -114,7 +114,7 @@ function removeScore(){
 
 function init(){
     points = 0;
-    timer = 10;
+    timer = 30;
     document.getElementById("reset").disabled = true;
     document.getElementById("timer").textContent = String(timer);
     removeScore();

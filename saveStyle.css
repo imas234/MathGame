@@ -1,0 +1,33 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    background-color: #FDF4F0;
+}
+
+.container{
+    text-align: center;
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+::-webkit-input-placeholder{
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+::-moz-placeholder{
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
