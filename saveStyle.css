@@ -24,10 +24,55 @@ body{
 
 ::-webkit-input-placeholder{
     font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
     text-align: center;
 }
 
 ::-moz-placeholder{
     font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
     text-align: center;
+}
+
+.input-area{
+    border: 20px;
+    padding: 20px 100px;
+    margin: 10px;
+}
+
+#score-msg{
+    padding: 30px 10px 10px 10px;
+    color: #150C2D;
+    font-size: 50px;
+}
+
+#score-value{
+    padding: 20px 10px;
+    color: #EF5818;
+    font-size: 70px;
+}
+
+.input-button{
+    margin-top: 30px;
+    color: #FDF4F0;
+    background-color: #150C2D;
+    border-width: 0px;
+    border-radius: 50px;
+    padding: 10px 40px;
+    font-size: 20px;
+    font-family: 'Quicksand', serif;
+}
+
+.input-button:active{
+    outline: none;
+    font-size:20px;
+}
+
+.input-button:focus{
+    outline: none;
+    font-size:20px;
+}
+
+input-button:hover{
+    font-size: 25px;
 }
