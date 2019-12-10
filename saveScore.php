@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container" id="score-box">
-        <span class="score-view" id="score-msg">You Scored</span>
+        <span class="score-view" id="score-msg">Points Scored</span>
         <span class="score-view" id="score-value"></span>
     </div>
     <form action="saveScore.php" method="POST">
