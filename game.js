@@ -33,7 +33,16 @@ function evaluate(expression){
 }
 
 function generateOptions(result){
-    return [result, result + 1, result - 1];
+    roll = getRandNum(3);
+    if(roll == 1){
+        return [result, result + 1, result + 2];
+    }
+    else if(roll == 2){
+        return [result, result - 2, result - 1];
+    }
+    else{
+        return [result, result - 1, result + 1];
+    }
 }
 
 function setOptions(options, order){
