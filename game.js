@@ -37,7 +37,7 @@ function generateOptions(result){
     if(roll == 1){
         return [result, result + 1, result + 2];
     }
-    else if(roll == 2){
+    else if(roll == 2 && result > 8){
         return [result, result - 2, result - 1];
     }
     else{
