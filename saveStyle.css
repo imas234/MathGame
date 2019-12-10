@@ -35,6 +35,8 @@ body{
 }
 
 .input-area{
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
     border: 20px;
     padding: 20px 100px;
     margin: 10px;
