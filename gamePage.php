@@ -29,7 +29,7 @@
     </div>
     <div class="container" id="link-box">
         <a class="link" id="save-score"></a>
-        <an class="link" id="leaderboard"></a>
+        <a class="link" id="leaderboard"></a>
     </div>
     <script src="game.js"></script>
 </body>

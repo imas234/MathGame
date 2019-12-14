@@ -14,7 +14,7 @@
         <span class="score-view" id="score-msg">Points Scored</span>
         <span class="score-view" id="score-value"></span>
     </div>
-    <form name="user-form" action="saveScore.php" method="POST" onsubmit="return validateForm()">
+    <form name="user-form" action="saveScore.php" method="POST" autocomplete="off" onsubmit="return validateForm()">
         <div class="container" id="login-box">
             <input  type="hidden" name="points" id="saved-points" value=""/>
             <input class="input-area" type="text" name="username" placeholder="Name" id="input-username" required/>   
