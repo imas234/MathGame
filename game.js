@@ -76,6 +76,9 @@ function getInput(){
         if(input == evaluate(exp)){
             points++;
         }
+        else{
+            points--;
+        }
         setState();
     });
     docOptions[1].addEventListener("click", function(){
@@ -83,12 +86,18 @@ function getInput(){
         if(input == evaluate(exp)){
             points++;
         }
+        else{
+            points--;
+        }
         setState();
     });
     docOptions[2].addEventListener("click", function(){
         input = Number(docOptions[2].textContent);
         if(input == evaluate(exp)){
             points++;
+        }
+        else{
+            points--;
         }
         setState();
     });
@@ -163,7 +172,7 @@ function game(){
         }        
     }, 1000)
     setState();
-    input = getInput(exp);
+    input = getInput();
 
 }
 
