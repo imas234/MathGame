@@ -70,35 +70,34 @@ function setState(){
     console.log("exp: " + exp + " input: " + input + " points: " + points);
 }
 
-function getInput(){
-    docOptions[0].addEventListener("click", function(){
-        input = Number(docOptions[0].textContent);
-        if(input == evaluate(exp)){
-            points++;
+function updatePoints(){
+    if(input == evaluate(exp)){
+        points++;
+    }
+    else{
+        if(points === 0){
+            points = 0;
         }
         else{
             points--;
         }
+    }
+}
+
+function getInput(){
+    docOptions[0].addEventListener("click", function(){
+        input = Number(docOptions[0].textContent);
+        updatePoints()
         setState();
     });
     docOptions[1].addEventListener("click", function(){
         input = Number(docOptions[1].textContent);
-        if(input == evaluate(exp)){
-            points++;
-        }
-        else{
-            points--;
-        }
+        updatePoints()
         setState();
     });
     docOptions[2].addEventListener("click", function(){
         input = Number(docOptions[2].textContent);
-        if(input == evaluate(exp)){
-            points++;
-        }
-        else{
-            points--;
-        }
+        updatePoints()
         setState();
     });
 }
